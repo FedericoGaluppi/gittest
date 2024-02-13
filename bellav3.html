@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Chicco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Reggae One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5%;
+        }
+
+        #btn {
+            border-radius: 5px;
+            padding: 4px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn:hover {
+            background-color: rgb(56, 56, 56);
+            color: rgb(24, 211, 143);
+            transition: 0.5s;
+        }
+
+        #btn:active {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            transition: 0.1s;
+        }
+
+        #txt {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Dancehall a Generation</h1>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s8JTC805CHU?si=e_ltrzInAn3rlyV2"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br><br>
+        <button id="btn" onclick="showText()">TESTO CANZONE</button>
+        <br><br>
+        <p id="txt">BELLA questo è il nuovo modo di dire..
+            nn è difficile da capire basta che state a sentire....
+            Se vedo un amico che nn incontro da un po
+            e ci tengo a salutarlo sai che cosa gli dirò....
+            Cè chi dice ciao come stai e io invece nooooo.....
+            Sai che gli dico io, sai cosa dico io, sai cosa dirò!!!
+            IO DICO BELLA, KIKKO DICO BELLA, BELLA FRATELLO,
+            BELLA LA SORELLA,BELLA CHI BALLA CHI SI RIBBELLA,
+            BELLA DA QUESTA PARTE E ANCHE DA QUELLA...
+            Dirsi buongiorno ormai non va più, e buonasera ormai non va più,
+            arrivederci ormai non va più, e pure il salve ormai non va più....
+            bella puoi dirlo a chi vuoi tu, più che un saluto è un passpartù ,
+            anche al telefono se metti giù BELLA ALLA MIA CREW ....
+            BELLA, KIKKO DICO BELLA, BELLA FRATELLO,
+            BELLA LA SORELLA,BELLA CHI BALLA CHI SI RIBBELLA,
+            BELLA DA QUESTA PARTE E ANCHE DA QUELLA...
+            Bella si dice, se va tutto bene se ti senti felice
+            davanti a sorprese inattese gradite se la gioia scoppia in petto
+            come la dinamite.....bella a chi ride!!!!!
+            Bella si esclama quando qualcuno a cui ci tieni chi chiama,
+            quando montella la insacca e poi plana,
+            se riesci ad andare al mare per il fine settimana.....bella chi si ama....
+            bella si pensa quando ritrovi i bagagli a malpensa
+            a scuola se non sai niente e rubi una sufficienza
+            se prendi un 30 alla sapienza bella chi pensa ciò....
+            BELLA, KIKKO DICO BELLA, BELLA FRATELLO,
+            BELLA LA SORELLA,BELLA CHI BALLA CHI SI RIBBELLA,
+            BELLA DA QUESTA PARTE E ANCHE DA QUELLA...
+            Se vedo un amico che nn incontro da un po
+            e ci tengo a salutarlo sai che cosa gli dirò....
+            Cè chi dice ciao come stai io invece nooooo....
+            sai che gli dico io, sai cosa dico io, sai che cosa dirò!!!
+            BELLA, KIKKO DICO BELLA, BELLA FRATELLO,
+            BELLA LA SORELLA,BELLA CHI BALLA CHI SI RIBBELLA,
+            BELLA DA QUESTA PARTE E ANCHE DA QUELLA...
+            Se vai a milano sentirai bella lì, se vieni a roma sentirai bella ci
+            se vai a palermo sentirai bella meeeee..... tutta Italia saluta così
+            BELLA, KIKKO DICO BELLA, BELLA FRATELLO,
+            BELLA LA SORELLA,BELLA CHI BALLA CHI SI RIBBELLA,
+            BELLA DA QUESTA PARTE E ANCHE DA QUELLA...
+
+            BELLA, KIKKO DICO BELLA, BELLA FRATELLO,
+            BELLA LA SORELLA,BELLA CHI BALLA CHI SI RIBBELLA,
+            BELLA DA QUESTA PARTE E ANCHE DA QUELLA...
+            In Sicilia dicono BELLA, in Toscana dicono BELLA,
+            in Piemonte dicono BELLA, in Calabria dicono BELLA,
+            in Abruzzo dicono BELLA, in Trentino dicono BELLA,
+            in Sardegna dicono BELLA, in Romagna dicono BELLA,
+            in Molise dicono BELLA, in Molise dicono BELLA,
+            nelle Marche dicono BELLA, anche in Puglia dicono BELLA,
+            in Friuli dicono BELLA, anche in Umbria dicono BELLA,
+            in Campagna dicono BELLAAAAA!!!!!!!!!</p>
+    </div>
+
+    <script>
+
+        let btn = document.getElementById("btn");
+        let text = document.getElementById("txt");
+        let check = 0;
+
+        function showText() {
+            if (check === 1) {
+                text.style.color = "white";
+                check = 0;
+            } else {
+                text.style.color = "black";
+                check = 1;
+            }
+        }
+    </script>
+</body>
+
+</html>
